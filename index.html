@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ТКБ БАНК</title>
+    <link rel="icon" href="/images/icon.jpg" />
+    <link rel="stylesheet" href="/styles/app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <aside class="sidebar">
+          <div class="sidebar__logo"></div>
+          <div class="sidebar__menu">
+            <h1 class="sidebar__heading blue">Меню</h1>
+            <a href="index.html" class="sidebar__item grey">Пункт 1</a>
+            <a href="index.html" class="sidebar__item grey">Пункт 2</a>
+            <a href="index.html" class="sidebar__item grey">Пункт 3</a>
+            <a href="index.html" class="sidebar__item grey">Пункт 4</a>
+          </div>
+        </aside>
+
+        <header class="header">
+          <form class="header__form">
+            <input class="header__input" type="text" placeholder="Поиск..." />
+            <button class="header__button gold_bg" type="submit"></button>
+          </form>
+        </header>
+
+        <section class="content">
+          <table class="content__table">
+            <tr>
+              <th>ФИО</th>
+              <th>Должность</th>
+              <th>Возраст</th>
+              <th>Компетенция</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td contenteditable="true" data-text>
+                Соколов Александр Владимирович
+              </td>
+              <td>
+                <select>
+                  <option value="Аналитик">Аналитик</option>
+                  <option value="Менеджер">Менеджер</option>
+                  <option value="Программист" selected>Программист</option>
+                  <option value="Юрист">Юрист</option>
+                </select>
+              </td>
+              <td contenteditable="true" data-num>34</td>
+              <td contenteditable="true">Frontend-разработка</td>
+              <td>
+                <div class="content__button content__button_delete">-</div>
+              </td>
+            </tr>
+            <tr>
+              <td contenteditable="true" data-text>
+                Иванова Елизавета Петровна
+              </td>
+              <td>
+                <select>
+                  <option value="Аналитик">Аналитик</option>
+                  <option value="Менеджер" selected>Менеджер</option>
+                  <option value="Программист">Программист</option>
+                  <option value="Юрист">Юрист</option>
+                </select>
+              </td>
+              <td contenteditable="true" data-num>25</td>
+              <td contenteditable="true">Обслуживание ФЛ</td>
+              <td>
+                <div class="content__button content__button_delete">-</div>
+              </td>
+            </tr>
+          </table>
+          <div class="content__controlPanel">
+            <div class="content__button content__button_send">Отправить</div>
+            <div class="content__button content__button_add">Добавить</div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer__content smallFonts grey">
+            <p>
+              Для бесплатных звонков на территории России +7 800 100 32 00 - для
+              частных лиц
+            </p>
+            <p>
+              Для звонков из любой точки мира по тарифам вашего оператора связи
+              +7 495 777 41 50 - для частных лиц
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="/scripts/index.js" type="module"></script>
+  </body>
+</html>

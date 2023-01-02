@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Corpid-light', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 17px;
+  line-height: 28px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Corpid-bold', sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.container {
+  max-width: 85vw;
+  margin: auto;
+  height: 100vh;
+  padding: 10px 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar content'
+    'sidebar footer';
+  grid-template-columns:
+    minmax(80px, 2fr)
+    minmax(240px, 8fr);
+  grid-template-rows: 80px auto 80px;
+}
+
+.blue {
+  color: rgb(0, 85, 153);
+}
+
+.lightBlue {
+  color: rgb(0, 171, 170);
+}
+.lightBlue_bg {
+  background: rgb(0, 171, 170);
+}
+
+.gold {
+  color: rgb(245, 157, 21);
+}
+
+.gold_bg {
+  background: rgb(245, 157, 21);
+}
+
+.grey {
+  color: rgb(150, 156, 161);
+}
+
+.smallFonts {
+  font-size: 12px;
+}

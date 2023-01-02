@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Corpid-light';
+  src: url('../fonts/corpid-light.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Corpid-bold';
+  src: url('../fonts/corpid-bold.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}

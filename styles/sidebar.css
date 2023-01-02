@@ -1,0 +1,23 @@
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sidebar__logo {
+  width: 100%;
+  height: 80px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sidebar__logo image {
+  width: 200px;
+}
+
+.sidebar__menu {
+  padding: 15px;
+}

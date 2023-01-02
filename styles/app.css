@@ -1,0 +1,8 @@
+@import '/styles/normalize.css';
+@import '/styles/fonts.css';
+@import '/styles/common.css';
+
+@import '/styles/sidebar.css';
+@import '/styles/header.css';
+@import '/styles/content.css';
+@import '/styles/footer.css';

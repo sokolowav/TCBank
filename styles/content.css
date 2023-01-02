@@ -1,0 +1,97 @@
+.content {
+  grid-area: content;
+  width: 100%;
+}
+
+.content__table {
+  width: 100%;
+  border-collapse: collapse;
+  display: grid;
+  min-width: 100%;
+  grid-template-columns:
+    minmax(150px, 6fr)
+    minmax(160px, 1fr)
+    minmax(100px, 1fr)
+    minmax(150px, 6fr)
+    minmax(56px, 56px);
+}
+
+th {
+  color: white;
+  background: rgb(0, 171, 170);
+  text-align: center;
+}
+
+th:last-child {
+  background: none;
+}
+
+th,
+td {
+  padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 58px;
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+table td {
+  white-space: normal;
+}
+
+table td:nth-child(3) {
+  text-align: center;
+}
+
+.content__controlPanel {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 56px 15px 0;
+}
+
+.content__button {
+  width: 130px;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content__button_send {
+  background-color: rgb(0, 171, 170);
+}
+
+.content__button_add {
+  background-color: rgb(245, 157, 21);
+}
+
+.content__button_delete {
+  width: 26px;
+  height: 26px;
+  background-color: rgb(177, 42, 43);
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  /* appearance: none; */
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
